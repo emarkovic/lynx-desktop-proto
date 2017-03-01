@@ -120,10 +120,32 @@ h1, h2, h3, h4, h5, h6, body {
 .body-widget span {
 	display: block;
 	margin-bottom: 3px;
+	clear: both;
 }
 
-.body-widget span:hover {
+.body-widget span:hover,
+.body-widget .selected a,
+.selected, 
+.selected:hover {
 	color: #9191E9;
+}
+
+.body-widget a {
+	color: #5D5E60;
+}
+
+.body-widget .content .selected span {
+	color: #9191E9;
+	display: inline;
+}
+
+.body-widget .content .selected i:hover {
+	color: #5D5E60;
+	cursor: pointer;
+}
+
+.body-widget .content a:hover {
+	text-decoration: none;
 }
 
 .body-title-filter {
