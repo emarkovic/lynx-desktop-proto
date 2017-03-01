@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6, body {
 .body-view-messages .messages .message {
 	margin: 0 auto;
 	width: calc(100% - 30px);
+	margin-bottom: 20px;
 }
 .body-view-messages .messages .message .col-md-1 {
 	padding-right: 0;
@@ -66,9 +67,14 @@ h1, h2, h3, h4, h5, h6, body {
 .body-view-messages .messages .message .message-face {
 	float: right;
 	font-size: 60px;	
+	margin-top: 12px;
 }
 .body-view-messages .messages .message .tag {
 	display: inline-block;
+	margin: 1px 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border: 1px #eee solid;
 }
 
 .body-widget {
@@ -78,12 +84,32 @@ h1, h2, h3, h4, h5, h6, body {
 	width: calc(100% - 20px);
 	height: 150px;
 	margin-left: 15px;
+	padding-left: 10px;
+	overflow-y: scroll;
 }
 
 .body-widget h3 {
-	margin-left: 10px;
-	font-size: 14px;
+	font-size: 18px;
 	margin-top: 5px;
+	float: left;
+}
+
+.body-widget .input-group {
+	float: right;
+	margin-left: -10px;
+}
+
+.body-widget .content {
+	clear: both;
+}
+
+.body-widget span {
+	display: block;
+	margin-bottom: 3px;
+}
+
+.body-widget span:hover {
+	color: #9191E9;
 }
 
 .body-title-filter {
