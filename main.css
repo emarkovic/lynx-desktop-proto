@@ -148,3 +148,39 @@ h1, h2, h3, h4, h5, h6, body {
 	color: #9191E9;
 	cursor: pointer;
 }
+
+.navbar-user-menu {
+	position: absolute;
+	top: 80px;
+	right:20px;
+	width: 200px;
+	height: 175px;
+	z-index: 100;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 5px;
+
+}
+
+.navbar-user-menu p {
+	text-align: center;
+	margin: 5px;
+	font-size: 16pt;
+}
+
+.button {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    display: block;
+    overflow:hidden;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
