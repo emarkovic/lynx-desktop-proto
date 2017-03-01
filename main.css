@@ -130,7 +130,8 @@ h1, h2, h3, h4, h5, h6, body {
 	color: #9191E9;
 }
 
-.body-widget a {
+.body-widget a, 
+.navbar a {
 	color: #5D5E60;
 }
 
