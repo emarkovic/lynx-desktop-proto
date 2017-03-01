@@ -111,16 +111,13 @@ h1, h2, h3, h4, h5, h6, body {
 
 .body-widget span:hover,
 .body-widget .selected a,
-.selected {
+.selected, 
+.selected:hover {
 	color: #9191E9;
 }
 
 .body-widget a {
 	color: #5D5E60;
-}
-
- {
-
 }
 
 .body-widget .content .selected span {
