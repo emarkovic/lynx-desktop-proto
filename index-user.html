@@ -9,6 +9,9 @@
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		
 		<script src="https://use.fontawesome.com/6cdc5077a4.js"></script>
 		
@@ -27,8 +30,41 @@
 				<a href="#" class="button">sign out</a>
 			</div>
 			<div class="container-fluid">
-				<a href="index-settings.html" class="button">settings</a>
+				<a data-toggle="modal" data-target="#myModal"class="button">settings</a>
 			</div>
+		</div>
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Settings</h4>
+		      </div>
+		      <div class="modal-body">
+		        <h5>Listening to links sent on...</h5>
+				<div class="checkbox">
+				    <label>
+				      	<input type="checkbox" checked> Facebook
+				    </label>
+				</div>
+				<div class="checkbox">
+				    <label>
+				      	<input type="checkbox" checked> Gmail
+				    </label>
+				</div>
+				<div class="checkbox">
+				    <label>
+				      	<input type="checkbox" checked> Slack
+				    </label>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
 		</div>	
 		
 		<div class="body">
@@ -136,5 +172,10 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			$('#myModal').on('shown.bs.modal', function () {
+			  $('#myInput').focus()
+			})
+		</script>
 	</body>
 </html>
